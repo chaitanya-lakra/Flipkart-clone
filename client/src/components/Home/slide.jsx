@@ -109,7 +109,7 @@ const SlideProducts = ({ products , title , timer}) => {
     return (
         <>
             {
-                products&&
+                products[0]?
                 <Component>
                     <Deal>
                         <Dealtext>{title}</Dealtext>
@@ -127,9 +127,8 @@ const SlideProducts = ({ products , title , timer}) => {
                     <Carousel responsive={responsive}
                         infinite={true}
                         disableSwipeOnMobile
-                        disableDrag
-                        autoPlay={true}
-                        autoPlaySpeed={3000}
+                        disableDrag  
+                        autoPlay={true} 
                         removeArrowOnDeviceType={["tablet" , "mobile"]}
                         >
                         {
@@ -149,6 +148,8 @@ const SlideProducts = ({ products , title , timer}) => {
 
                     </Carousel>
                 </Component>
+                :
+                ""
                    
             }
         </>

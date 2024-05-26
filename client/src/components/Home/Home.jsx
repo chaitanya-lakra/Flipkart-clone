@@ -33,7 +33,12 @@ const Home = ()=>{
         <NavBar/>
         <Component>
         <Banner/>
-        <MidSlide products={products} title='Deal Of The Day' timer={true} />
+        {
+            products[0]?
+            <MidSlide products={products} title='Deal Of The Day' timer={true} />
+            :""
+
+        }
         <MidSection/>
         <SlideProducts products={products} title = 'Discount For You' />
         <SlideProducts products={products} title='Top Selections' />
@@ -42,7 +47,6 @@ const Home = ()=>{
         <SlideProducts products={products} title ='Recommanded Items'/>
         <SlideProducts products={products} title='Top Selections' />
         </Component>
-
         </>
     )
 }

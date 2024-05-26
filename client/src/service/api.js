@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const URL = '76.76.21.93';
+const URL = 'https://flipkart-clone-sable-three.vercel.app'; 
  export const SignupAuth = async (data) =>{
     try{
         return await axios.post(`${URL}/signup` , data);
