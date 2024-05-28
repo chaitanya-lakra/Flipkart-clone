@@ -15,8 +15,8 @@ router.get('/products' , GetProducts);
 
 router.get('/products/:id' , GetProductsById);
 
-const Order =()=>{
-    return response.status(200).json("ok");
+const Order =(req , res)=>{
+    return res.status(200).json("ok");
 }
 
 
