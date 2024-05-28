@@ -9,8 +9,6 @@ router.post('/signup' , Usersignup);
  
 router.post('/login' , Userlogin);
 
-router.post('/order' , Order);
-
 router.get('/products' , GetProducts);
 
 router.get('/products/:id' , GetProductsById);
