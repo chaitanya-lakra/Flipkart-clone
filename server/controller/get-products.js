@@ -22,3 +22,7 @@ export const GetProductsById = async(request , response)=>{
     }
 
 }
+
+export const Order =(req , res)=>{
+    return res.status(200).json("ok");
+}
