@@ -6,7 +6,7 @@
  import SlideProducts from './slide'
  import MidSlide from './midSlide'
  import MidSection from './midSection'
-
+ import axios from 'axios'
 
  import { Box , styled } from '@mui/material'
 
@@ -18,12 +18,11 @@ background : #f2f2f2 ;
 
 const Home = ()=>{
     const {products} = useSelector(state => state.getProducts);
-
+    const URL ='https://tasks45-ochre.vercel.app'; 
     const dispatch = useDispatch();
 
     useEffect(()=>{
         dispatch(getProducts());
-
     },[dispatch])    
 
 

@@ -5,6 +5,7 @@ import { BrowserRouter , Routes , Route} from 'react-router-dom';
 import DetailView from './components/details/detailView';
 import { Box , styled} from "@mui/material";
 import Cart from "./components/cart/cart";
+import {Toaster} from 'react-hot-toast';
 
 const BoxStyle = styled(Box)(({ theme })=>({
   marginTop : '55px',
@@ -17,6 +18,7 @@ function App() {
   return(
 
   <>
+  <Toaster/>
   <DataProvider>
     <BrowserRouter>
       <Header/>

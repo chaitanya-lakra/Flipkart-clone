@@ -16,6 +16,9 @@ export const cartReducer = (state = {cartItems : []} , action)=>{
         case 'remove':
             return {...state , cartItems : state.cartItems.filter(product => product.id !== action.payload)};
 
+        case 'EMPTY':
+            return {cartItems : []}; 
+
         default:
             return state ;
     }

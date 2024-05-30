@@ -23,12 +23,3 @@ export const AuthLogin = async (data) =>{
 
 }
 
-export const PayWithPaytm = async(data)=>{
-    try{
-        let response = axios.post(`${URL}/payment` , data);
-        console.log(response.data);
-    }catch(error)
-    {
-        console.log(error.message);
-    }
-}
